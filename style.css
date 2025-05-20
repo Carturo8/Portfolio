@@ -1,0 +1,13 @@
+* {
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+.container {
+    background-color: black;
+}
+
+.center-text {
+    text-align: center;
+}
+
