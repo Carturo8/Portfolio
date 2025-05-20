@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <title>Carlos Rojas - Portfolio</title>
     <style>
         body {
@@ -42,6 +43,21 @@
             padding: 10px;
             border-top: 1px solid #f1c40f;
             font-size: 0.9em;
+        }
+        .skills-grid ul {
+            columns: 3; /* Crea 3 columnas automáticas */
+            -webkit-columns: 3;
+            -moz-columns: 3;
+            list-style: none;
+            padding: 0;
+        }
+        .skills-grid li {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        i {
+            margin-right: 8px;
+            color: #f1c40f;
         }
     </style>
 </head>
@@ -97,18 +113,20 @@
 
 <section>
     <h2>Technical Skills</h2>
-    <ul>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>R</li>
-        <li>Power BI</li>
-        <li>Docker</li>
-        <li>PySpark</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Git</li>
-        <li>GitHub</li>
-    </ul>
+    <div class="skills-grid">
+        <ul>
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fas fa-database"></i> SQL</li>
+            <li><i class="fab fa-r-project"></i> R</li>
+            <li><i class="fas fa-chart-line"></i> Power BI</li>
+            <li><i class="fab fa-docker"></i> Docker</li>
+            <li><i class="fas fa-fire"></i> PySpark</li>
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-git-alt"></i> Git</li>
+            <li><i class="fab fa-github"></i> GitHub</li>
+        </ul>
+    </div>
 </section>
 
 <section>
