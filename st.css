@@ -23,15 +23,18 @@ body {
     color: var(--text-color);
 }
 
+div {
+    margin: 0 0;
+    padding: 0 0;
+}
+
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 0;
     padding: 0 var(--spacing-unit);
 }
 
 .main-nav {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     background-color: var(--background-color);
 }
 
@@ -43,25 +46,6 @@ body {
     color: var(--primary-color);
 }
 
-section {
-    margin: 2rem 0;
-    padding: 2rem 0;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 8px;
-}
-
-section h2 {
-    margin-bottom: 1.5rem;
-    color: var(--text-color);
-    font-size: 2rem;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 a {
     text-decoration: none;
     color: var(--primary-color);
@@ -71,11 +55,33 @@ a:hover {
     color: var(--secondary-color);
 }
 
+section {
+    margin: 2rem 0;
+    padding: 2rem 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.dark-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    gap: 2rem;
+    color: var(--primary-color);
+}
+
+section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
 .presentation {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
 
     /* Estilos adicionales para mejorar la presentación */
     min-height: 30vh;        /* Altura mínima del contenedor */
@@ -99,9 +105,7 @@ a:hover {
 }
 
 .footer {
-    justify-content: center;
     text-align: center;
     background-color: var(--primary-color);
     color: var(--text-color);
-    font-size: 0.9rem;
 }
