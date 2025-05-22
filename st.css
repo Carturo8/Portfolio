@@ -1,111 +1,30 @@
-:root {
-    --primary-color: #FFF;
-    --secondary-color: #EFB810;
-    --text-color: #000;
-    --background-color: #000;
-    --spacing-unit: 1rem;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    font-size: 16px;
-    scroll-behavior: smooth;
+header {
+    text-align: center;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.5;
-    color: var(--text-color);
-}
-
-div {
-    margin: 0 0;
-    padding: 0 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
-    margin: 0 0;
-    padding: 0 var(--spacing-unit);
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem 3rem;
 }
 
-.main-nav {
-    padding: 0.5rem 0;
-    background-color: var(--background-color);
+.black-container {
+    width: 100%;
+    padding: 2rem 3rem;
+    background-color: #000;
+    color: #fff;
 }
 
-.nav-list {
+li {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    color: var(--primary-color);
-}
-
-a {
-    text-decoration: none;
-    color: var(--primary-color);
-}
-
-a:hover {
-    color: var(--secondary-color);
-}
-
-section {
-    margin: 2rem 0;
-    padding: 2rem 0;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 8px;
-}
-
-.dark-section{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--background-color);
-    gap: 2rem;
-    color: var(--primary-color);
-}
-
-section h2 {
-    margin-bottom: 1.5rem;
-    color: var(--text-color);
-    font-size: 2rem;
-}
-
-.presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    /* Estilos adicionales para mejorar la presentación */
-    min-height: 30vh;        /* Altura mínima del contenedor */
-    justify-content: center; /* Centra verticalmente el contenido */
-    background-color: #f8f9fa; /* Fondo suave */
-}
-
-.presentation h1 {
-    margin-bottom: 0.5rem;
-    font-size: 2.5rem;
-    font-weight: 700;        /* Hace la fuente más negrita */
-    color: #2c3e50;         /* Color más oscuro para el título */
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
-}
-
-.presentation p {
-    font-size: 1.2rem;
-    color: #666;
-    font-weight: 400;        /* Peso de la fuente normal */
-    letter-spacing: 1px;   /* Espaciado entre letras */
-}
-
-.footer {
-    text-align: center;
-    background-color: var(--primary-color);
-    color: var(--text-color);
 }
