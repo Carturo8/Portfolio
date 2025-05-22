@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #FFF;
+    --secondary-color: #EFB810;
+    --text-color: #000;
+    --background-color: #000;
+    --spacing-unit: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-unit);
+}
+
+.main-nav {
+    padding: 1rem 0;
+    background-color: var(--background-color);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    color: var(--primary-color);
+}
+
+section {
+    margin: 2rem 0;
+    padding: 2rem 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+
+    /* Estilos adicionales para mejorar la presentación */
+    min-height: 30vh;        /* Altura mínima del contenedor */
+    justify-content: center; /* Centra verticalmente el contenido */
+    background-color: #f8f9fa; /* Fondo suave */
+}
+
+.presentation h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;        /* Hace la fuente más negrita */
+    color: #2c3e50;         /* Color más oscuro para el título */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+.presentation p {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 400;        /* Peso de la fuente normal */
+    letter-spacing: 1px;   /* Espaciado entre letras */
+}
+
+.footer {
+    justify-content: center;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
