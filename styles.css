@@ -114,7 +114,7 @@ li {
 
 #work-experience-education {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 3rem;
