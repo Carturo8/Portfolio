@@ -15,11 +15,31 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.navbar {
-    background-color: #000;
-    padding: 1.5rem;
-    text-align: center;
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
     width: 100%;
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+}
+
+.black-container {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(0, 49, 83, 0.9);
+    color: #fff;
+}
+
+.navbar {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .navbar ul {
@@ -51,7 +71,7 @@ body {
     background-color: #f5f5f5;
  }
 
-h1 {
+.title {
     margin-bottom: 1rem;
     font-size: 3.5rem;
     text-align: center;
@@ -97,55 +117,83 @@ li {
     margin-bottom: 0.5rem;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-#about-me {
-    display: flex;
-    justify-content: space-between;
-    background-color: #000;
-    color: #fff;
-    padding: 2rem 3rem;
-}
-
-#work-experience-education {
+.section-container {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 3rem;
+    text-align: center;
 }
 
-.work-education-container {
+.sub-section-container {
+    width: 45%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.sub-project-container {
     width: 45%;
     padding: 1rem;
 }
 
-#my-projects {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 1.5rem;
-    background-color: #000;
-    color: #fff;
+.projects-titles {
+    font-size: 2rem;
+    color: #d4af37;
 }
 
-.project-container {
-    width: 48%;
-    padding: 1rem;
+.section-skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.skills-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.skills-container ul {
+    width: 200px;
+    margin: 10px 100px;
+    padding: 20px 0;
+}
+
+.skills-container ul li {
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 5px;
+}
+
+.skills-container ul li i {
+    font-size: 40px;
+    margin-right: 20px;
+    color: #1ed760;
+}
+
 
 #contact {
     display: flex;
     justify-content: space-between;
-    background-color: #000;
-    color: #fff;
     padding: 2rem;
     gap: 2rem;
+    background-color: #000;
+    color: #fff;
 }
 
 #contact .container {
@@ -186,4 +234,5 @@ button {
     padding: 1rem;
     background-color: #f5f5f5;
     font-size: 0.9rem;
+    font-weight: bold;
 }
