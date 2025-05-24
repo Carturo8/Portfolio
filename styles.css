@@ -25,7 +25,6 @@ html {
 .container {
     width: 100%;
     height: 100%;
-    padding: 2rem;
     text-align: center;
     background-color: #f5f5f5;
     color: #000;
@@ -33,9 +32,8 @@ html {
 
 .black-container {
     width: 100%;
-    padding: 2rem;
     text-align: center;
-    background-color: rgba(0, 49, 83, 0.9);
+    background-color: #000;
     color: #fff;
 }
 
@@ -44,7 +42,7 @@ html {
     width: 100%;
     padding: 0.5rem;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #000;
 }
 
 .navbar ul {
@@ -90,6 +88,7 @@ html {
 }
 
 h2 {
+    margin-top: 1rem;
     font-size: 2.5rem;
     text-align: center;
 }
@@ -101,7 +100,7 @@ h3 {
 
 h4 {
     font-size: 1.5rem;
-    color: #333;
+    color: #000;
 }
 
 .top-space {
@@ -122,9 +121,14 @@ li {
     margin-bottom: 0.5rem;
 }
 
+img {
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+}
+
 
 /* ABOUT ME SECTION */
-.section-about-me {
+.about-me-section {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -137,13 +141,12 @@ li {
     height: 100%;
     display: flex;
     justify-content: center;
-    padding: 2rem;
 }
 
 .information-container {
     width: 100%;
     height: 100%;
-    margin: 0 5rem 0 10rem;
+    margin: 0 0rem 0 10rem;
     padding: 2rem;
 }
 
@@ -152,11 +155,13 @@ li {
     height: 100%;
     display: flex;
     justify-content: center;
+    align-content: center;
+    padding: 5rem;
 }
 
 
 /* WORK-EXPERIENCE & EDUCATION SECTION */
-.section-work-education {
+.work-education-section {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -170,7 +175,6 @@ li {
     height: 100%;
     display: flex;
     justify-content: center;
-    padding: 2rem;
 }
 
 .work-experience-container {
@@ -179,6 +183,15 @@ li {
     margin: 0 5rem 0 10rem;
     padding: 1rem;
 }
+
+.work-justify {
+    text-align: justify;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+    font-size: 1.3rem;
+}
+
 
 /* EDUCATION SUBSECTION */
 .education-container {
@@ -189,12 +202,12 @@ li {
 }
 
 .education-container li {
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 0 1rem 0;
 }
 
 
 /* PROJECTS SECTION */
-.section-projects {
+.projects-section {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -211,7 +224,7 @@ li {
 
 .sub-project-container {
     height: 100%;
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
 }
 
 .projects-titles {
@@ -222,7 +235,7 @@ li {
 
 
 /* SKILLS SECTION */
-.section-skills {
+.skills-section {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -261,22 +274,32 @@ li {
 
 
 /* CONTACT SECTION */
-#contact {
+.contact-section {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-information-container {
+    width: 50%;
+    height: 100%;
+    margin: 0 1rem 0 5rem;
     padding: 2rem;
-    gap: 2rem;
-    background-color: #000;
-    color: #fff;
 }
 
-#contact .container {
-    flex: 1;
-    padding: 1rem;
-}
-
-#contact div:last-child {
-    flex: 1;
+.form-container {
+    width: 50%;
+    height: 100%;
+    margin: 2rem;
 }
 
 form {
