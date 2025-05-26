@@ -8,6 +8,7 @@
     <title>Carlos Rojas - Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
 </head>
 
 <!-- Body -->
@@ -46,6 +47,10 @@
                             with programming to build innovative tech solutions and keep growing through
                             new challenges.
                         </p>
+                        <blockquote>
+                            <p>"Computing is not about computers anymore. It is about <mark>living</mark>."</p>
+                            <footer>— Nicholas Negroponte</footer>
+                        </blockquote>
                     </div>
                     <!-- Profile Photo Container -->
                     <div class="profile-photo-container">
@@ -66,7 +71,7 @@
                             <li>
                                 <h3>Data Intern</h3>
                                 <h4>Fábrica de Licores de Antioquia</h4>
-                                <em>February 2023 — July 2023</em>
+                                <time datetime="2023-02">February 2023</time> — <time datetime="2023-07">July 2023</time>
                                 <ul class="top-space">
                                     <li><p class="work-justify">Developed monthly sales forecasts in Python for Grupo Éxito in Antioquia.</p></li>
                                     <li><p class="work-justify">Analyzed inventory and sales data to support weekly and monthly reporting.</p></li>
@@ -103,23 +108,20 @@
                     <div class="sub-project-container">
                         <h3 class="projects-titles">Project 1: Inventory Management Program</h3>
                         <img src="./img/project_1.jpg" alt="Project 1" width="500">
-                        <p class="text-justify">
-                            This Python program helps manage a store's inventory efficiently.
-                            <br>
-                            It provides functionalities to add, search, update, delete products,
-                            <br>
-                            and calculate the total value of the inventory.
-                        </p>
+                        <details>
+                            <summary><samp>Python program</samp> to efficiently manage store inventory with add, search, </summary>
+                            <p>
+                                update, delete, and total value calculation features.
+                            </p>
+                        </details>
                     </div>
                     <!-- Project 2 Container -->
                     <div class="sub-project-container">
                         <h3 class="projects-titles">Project 2: Portfolio Website</h3>
-                        <img src="./img/project_2.jpg" alt="Project 2" width="215">
-                        <p class="text-justify">
-                            A personal portfolio project built with HTML and CSS to showcase my
-                            <br>
-                            background, skills, and projects as an aspiring software developer.
-                        </p>
+                        <figure>
+                            <img src="./img/project_2.jpg" alt="Project 2" width="215">
+                            <figcaption>Portfolio Website Project</figcaption>
+                        </figure>
                     </div>
                 </div>
             </section>
@@ -131,16 +133,40 @@
                 <!-- Technical skills Container -->
                 <div class="skills-container">
                     <ul>
-                        <li><i class="fab fa-python"></i>Python</li>
-                        <li><i class="fab fa-r-project"></i>R</li>
-                        <li><i class="fab fa-html5"></i>HTML</li>
-                        <li><i class="fab fa-css3-alt"></i>CSS</li>
+                        <li>
+                            <i class="fab fa-python"></i>Python
+                            <meter value="0.9" min="0" max="1">90%</meter>
+                        </li>
+                        <li>
+                            <i class="fab fa-r-project"></i>R
+                            <meter value="0.75" min="0" max="1">75%</meter>
+                        </li>
+                        <li>
+                            <i class="fab fa-html5"></i>HTML
+                            <meter value="0.55" min="0" max="1">55%</meter>
+                        </li>
+                        <li>
+                            <i class="fab fa-css3-alt"></i>CSS
+                            <meter value="0.40" min="0" max="1">40%</meter>
+                        </li>
                     </ul>
                     <ul>
-                        <li><i class="fas fa-database"></i>SQL</li>
-                        <li><i class="fas fa-chart-bar"></i>Power BI</li>
-                        <li><i class="fab fa-git-alt"></i>Git</li>
-                        <li><i class="fab fa-github"></i>GitHub</li>
+                        <li>
+                            <i class="fas fa-database"></i>SQL
+                            <meter value="0.65" min="0" max="1">65%</meter>
+                        </li>
+                        <li>
+                            <i class="fas fa-chart-bar"></i>Power BI
+                            <meter value="0.55" min="0" max="1">55%</meter>
+                        </li>
+                        <li>
+                            <i class="fab fa-git-alt"></i>Git
+                            <meter value="0.60" min="0" max="1">60%</meter>
+                        </li>
+                        <li>
+                            <i class="fab fa-github"></i>GitHub
+                            <meter value="0.70" min="0" max="1">70%</meter>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -153,14 +179,17 @@
                 <div class="contact-container">
                     <!-- Contact Information Container -->
                     <div class="contact-information-container">
-                        <p class="contact-text">
-                            <i class="fas fa-envelope"></i>
-                            Email: caarojasbo@unal.edu.co
-                        </p>
-                        <p class="contact-text">
-                            <i class="fas fa-phone"></i>
-                            Phone: +57 312 405 2318
-                        </p>
+                        <address>
+                            <div>
+                                <i class="fas fa-envelope"></i> Email: caarojasbo@unal.edu.co
+                            </div>
+                            <div>
+                                <i class="fas fa-phone"></i> Phone: +57 312 405 2318
+                            </div>
+                            <div>
+                                <i class="fas fa-location"></i> Location: Medellín, Colombia
+                            </div>
+                        </address>
                         <div class="social-links">
                             <a href="https://github.com/Carturo8" target="_blank">
                                 <i class="fab fa-github"></i> GitHub
