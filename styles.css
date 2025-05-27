@@ -452,3 +452,127 @@ button {
     font-size: 0.9rem;
     font-weight: bold;
 }
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+
+    .container,
+    .black-container,
+    .title-container,
+    .about-me-container,
+    .work-education-container,
+    .projects-container,
+    .skills-container,
+    .contact-container {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .about-me-container {
+        flex-direction: column;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    .information-container {
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .profile-photo-container {
+        padding: 1rem;
+    }
+
+    .work-education-container {
+        flex-direction: column;
+    }
+
+    .work-experience-container,
+    .education-container {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .sub-project-container {
+        padding: 1rem 0;
+    }
+
+    .projects-table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .skills-container ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .skills-container ul li {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 1rem 0;
+    }
+
+    .skills-container ul li i {
+        font-size: 2rem;
+        margin: 0 0 0.5rem 0;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .form-container {
+        width: 100%;
+        margin: 2rem 0 0 0;
+    }
+
+    .contact-text {
+        flex-direction: column;
+    }
+
+    .address {
+        text-align: center;
+        align-items: center;
+    }
+
+    input, textarea {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        position: static;
+        padding: 0.5rem;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
