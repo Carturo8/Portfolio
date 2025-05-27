@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-/* HEADER */
-header {
-    display: flex;
-}
-
 /* BODY */
 body {
     font-family: 'Roboto', sans-serif;
