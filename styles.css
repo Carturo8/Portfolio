@@ -33,23 +33,29 @@ html {
     width: 100%;
     text-align: center;
     background-color: #000;
-    color: #fff;
+    color: #f5f5f5;
     padding: 0 5rem;
+}
+
+h1 {
+    padding-top: 1rem;
+    font-size: 3rem;
+    text-align: center;
 }
 
 h2 {
     margin-top: 1rem;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
 h3 {
     margin-top: 1rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 h4 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #000;
 }
 
@@ -96,7 +102,7 @@ meter {
 
 mark {
     background-color: #000;
-    color: #fff;
+    color: #f5f5f5;
     font-weight: bold;
     font-style: italic;
 }
@@ -152,23 +158,26 @@ samp {
 }
 
 .navbar a:hover {
-    color: #fff;
+    color: #f5f5f5;
     transition: all 0.3s;
 }
 
 
-/* TITLE */
-.title-container {
+/* HERO SECTION */
+.hero-section {
     width: 100%;
     margin: 0 auto;
     padding: 2rem;
     background-color: #f5f5f5;
 }
 
-.title {
-    margin-bottom: 1rem;
-    font-size: 3rem;
+.hero-section p {
+    margin: 0;
+    padding: 0;
     text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d4af37;
 }
 
 .subtitle {
@@ -177,6 +186,7 @@ samp {
     color: #d4af37;
     font-weight: bold;
 }
+
 
 /* ABOUT ME SECTION */
 .about-me-section {
