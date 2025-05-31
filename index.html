@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- HTML -->
 <html lang="en">
 
 <!-- Head -->
@@ -26,229 +27,208 @@
             </ul>
         </nav>
         <!-- Hero Section -->
-        <section class="hero-section">
+        <div class="hero-section">
             <h1>Carlos Arturo Rojas Bolaños</h1>
             <p>Statistician & Riwi Developer</p>
-        </section>
+        </div>
     </header>
     <!-- Main -->
     <main>
-        <div class="black-container">
-            <!-- About Me Section -->
-            <section id="about-me" class="about-me-section">
-                <!-- About Me Container -->
-                <div class="about-me-container">
-                    <!-- Information Container -->
-                    <div class="information-container">
-                        <h2>About Me</h2>
-                        <p class="text-justify">
-                            I'm Carlos, a Statistics professional specializing in Analytics,
-                            now training as a software developer at Riwi. I aim to blend data analysis
-                            with programming to build innovative tech solutions and keep growing through
-                            new challenges.
-                        </p>
-                        <blockquote>
-                            <p>"Computing is not about computers anymore. It is about <mark>living</mark>."</p>
-                            <footer>— Nicholas Negroponte</footer>
-                        </blockquote>
-                    </div>
-                    <!-- Profile Photo Container -->
-                    <div class="profile-photo-container">
-                        <img src="./img/profile_photo.jpg" alt="Profile photo" width="200">
-                    </div>
+        <!-- About Me Section -->
+        <section id="about-me" class="about-me-section">
+            <!-- Information Container -->
+            <div class="information">
+                <h2>About Me</h2>
+                <p>
+                    I'm Carlos, a Statistics professional specializing in Analytics,
+                    now training as a software developer at Riwi. I aim to blend data analysis
+                    with programming to build innovative tech solutions and keep growing through
+                    new challenges.
+                </p>
+                <blockquote>
+                    <p>"Computing is not about computers anymore. It is about living."</p>
+                    <footer>— Nicholas Negroponte</footer>
+                </blockquote>
+            </div>
+            <!-- Profile Photo Container -->
+            <div class="profile-photo">
+                <img src="./img/profile_photo.jpg" alt="Profile photo" width="250">
+            </div>
+        </section>
+        <!-- Work Experience / Education Section -->
+        <section id="work-experience-education" class="work-education-section">
+            <!-- Work Experience Container -->
+            <div class="work-experience">
+                <h2>Work Experience</h2>
+                <h3>Data Intern</h3>
+                <h4>Fábrica de Licores de Antioquia</h4>
+                <time datetime="2023-02">February 2023</time> — <time datetime="2023-07">July 2023</time>
+                <ul>
+                    <li><p>Developed monthly sales forecasts in Python for Grupo Éxito in Antioquia.</p></li>
+                    <li><p>Analyzed inventory and sales data to support weekly and monthly reporting.</p></li>
+                </ul>
+            </div>
+            <!-- Education Container -->
+            <div class="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <h3>Analytics Specialist</h3>
+                        <h4>Universidad Nacional de Colombia</h4>
+                        <em>Medellín, Colombia, 2025</em>
+                    </li>
+                    <li>
+                        <h3>Statistician</h3>
+                        <h4>Universidad Nacional de Colombia</h4>
+                        <em>Medellín, Colombia, 2023</em>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- My Projects Section -->
+        <section id="my-projects" class="projects-section">
+            <h2>My Projects</h2>
+            <!-- My Projects Container -->
+            <div class="projects">
+                <!-- Project 1 Container -->
+                <div class="sub-project">
+                    <h3>Project 1: Inventory Management Program</h3>
+                    <img src="./img/project_1.jpg" alt="Project 1" width="500">
+                    <details>
+                        <summary>
+                            <samp>Python program</samp> to efficiently manage store inventory with add, search,
+                        </summary>
+                        update, delete, and total value calculation features.
+                    </details>
                 </div>
-            </section>
-        </div>
-        <div class="container">
-            <!-- Work Experience / Education Section -->
-            <section id="work-experience-education" class="work-education-section">
-                <!-- Work Experience / Education Container -->
-                <div class="work-education-container">
-                    <!-- Work Experience Container -->
-                    <div class="work-experience-container">
-                        <h2>Work Experience</h2>
-                        <ul>
-                            <li>
-                                <h3>Data Intern</h3>
-                                <h4>Fábrica de Licores de Antioquia</h4>
-                                <time datetime="2023-02">February 2023</time> — <time datetime="2023-07">July 2023</time>
-                                <ul class="top-space">
-                                    <li><p class="work-justify">Developed monthly sales forecasts in Python for Grupo Éxito in Antioquia.</p></li>
-                                    <li><p class="work-justify">Analyzed inventory and sales data to support weekly and monthly reporting.</p></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Education Container -->
-                    <div class="education-container">
-                        <h2>Education</h2>
-                        <ul>
-                            <li>
-                                <h3>Analytics Specialist</h3>
-                                <h4>Universidad Nacional de Colombia</h4>
-                                <em>Medellín, Colombia, 2025</em>
-                            </li>
-                            <li>
-                                <h3>Statistician</h3>
-                                <h4>Universidad Nacional de Colombia</h4>
-                                <em>Medellín, Colombia, 2023</em>
-                            </li>
-                        </ul>
-                    </div>
+                <!-- Project 2 Container -->
+                <div class="sub-project">
+                    <h3>Project 2: Portfolio Website</h3>
+                    <figure>
+                        <img src="./img/project_2.jpg" alt="Project 2" width="215">
+                        <figcaption>Portfolio Website Project</figcaption>
+                    </figure>
                 </div>
-            </section>
-        </div>
-        <div class="black-container">
-            <!-- My Projects Section -->
-            <section id="my-projects" class="projects-section">
-                <h2>My Projects</h2>
-                <!-- My Projects Container -->
-                <div class="projects-container">
-                    <!-- Project 1 Container -->
-                    <div class="sub-project-container">
-                        <h3 class="projects-titles">Project 1: Inventory Management Program</h3>
-                        <img src="./img/project_1.jpg" alt="Project 1" width="500">
-                        <details>
-                            <summary><samp>Python program</samp> to efficiently manage store inventory with add, search, </summary>
-                            <p>
-                                update, delete, and total value calculation features.
-                            </p>
-                        </details>
-                    </div>
-                    <!-- Project 2 Container -->
-                    <div class="sub-project-container">
-                        <h3 class="projects-titles">Project 2: Portfolio Website</h3>
-                        <figure>
-                            <img src="./img/project_2.jpg" alt="Project 2" width="215">
-                            <figcaption>Portfolio Website Project</figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="black-container">
-                    <table class="projects-table">
-                        <thead>
-                        <tr>
-                            <th>Project Name</th>
-                            <th>Technology Used</th>
-                            <th>Link</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Inventory Management Program</td>
-                            <td>Python</td>
-                            <td><a href="https://github.com/Carturo8/Inventory-Management" target="_blank">View Project</a></td>
-                        </tr>
-                        <tr>
-                            <td>Portfolio Website</td>
-                            <td>HTML, CSS</td>
-                            <td><a href="https://github.com/Carturo8/portfolio" target="_blank">View Project</a></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-        </div>
-        <div class="container">
-            <!-- Technical Skills Section -->
-            <section id="technical-skills" class="skills-section">
-                <h2>Technical Skills</h2>
-                <!-- Technical skills Container -->
-                <div class="skills-container">
-                    <ul>
-                        <li>
-                            <i class="fab fa-python"></i>Python
-                            <meter value="0.8" min="0" max="1">80%</meter>
-                        </li>
-                        <li>
-                            <i class="fab fa-r-project"></i>R
-                            <meter value="0.75" min="0" max="1">75%</meter>
-                        </li>
-                        <li>
-                            <i class="fab fa-html5"></i>HTML
-                            <meter value="0.55" min="0" max="1">55%</meter>
-                        </li>
-                        <li>
-                            <i class="fab fa-css3-alt"></i>CSS
-                            <meter value="0.40" min="0" max="1">40%</meter>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <i class="fas fa-database"></i>SQL
-                            <meter value="0.65" min="0" max="1">65%</meter>
-                        </li>
-                        <li>
-                            <i class="fas fa-chart-bar"></i>Power BI
-                            <meter value="0.55" min="0" max="1">55%</meter>
-                        </li>
-                        <li>
-                            <i class="fab fa-git-alt"></i>Git
-                            <meter value="0.60" min="0" max="1">60%</meter>
-                        </li>
-                        <li>
-                            <i class="fab fa-github"></i>GitHub
-                            <meter value="0.70" min="0" max="1">70%</meter>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <div class="black-container">
-            <!-- Contact Section -->
-            <section id="contact" class="contact-section">
-                <h2>Contact</h2>
-                <!-- Contact Container -->
-                <div class="contact-container">
-                    <!-- Contact Information Container -->
-                    <div class="contact-information-container">
-                        <address>
-                            <div>
-                                <i class="fas fa-envelope"></i> Email: caarojasbo@unal.edu.co
-                            </div>
-                            <div>
-                                <i class="fas fa-phone"></i> Phone: +57 312 405 2318
-                            </div>
-                            <div>
-                                <i class="fas fa-location"></i> Location: Medellín, Colombia
-                            </div>
-                        </address>
-                        <div class="social-links">
-                            <a href="https://github.com/Carturo8" target="_blank">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a href="https://co.linkedin.com/" target="_blank">
-                                <i class="fab fa-linkedin"></i> LinkedIn
-                            </a>
-                            <a href="https://www.instagram.com/" target="_blank">
-                                <i class="fab fa-instagram"></i> Instagram
-                            </a>
-                            <a href="https://x.com/?lang=es" target="_blank">
-                                <i class="fab fa-x-twitter"></i> X
-                            </a>
+            </div>
+            <!-- Projects Table -->
+            <table class="projects-table">
+                <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Technology Used</th>
+                    <th>Link</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Inventory Management Program</td>
+                    <td>Python</td>
+                    <td><a href="https://github.com/Carturo8/Inventory-Management" target="_blank">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>HTML, CSS</td>
+                    <td><a href="https://github.com/Carturo8/portfolio" target="_blank">View Project</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- Technical Skills Section -->
+        <section id="technical-skills" class="skills-section">
+            <h2>Technical Skills</h2>
+            <!-- Technical skills Container -->
+            <div class="skills">
+                <ul>
+                    <li>
+                        <i class="fab fa-python"></i>Python
+                        <meter value="0.8" min="0" max="1">80%</meter>
+                    </li>
+                    <li>
+                        <i class="fab fa-r-project"></i>R
+                        <meter value="0.75" min="0" max="1">75%</meter>
+                    </li>
+                    <li>
+                        <i class="fab fa-html5"></i>HTML
+                        <meter value="0.55" min="0" max="1">55%</meter>
+                    </li>
+                    <li>
+                        <i class="fab fa-css3-alt"></i>CSS
+                        <meter value="0.55" min="0" max="1">40%</meter>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <i class="fas fa-database"></i>SQL
+                        <meter value="0.65" min="0" max="1">65%</meter>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-bar"></i>Power BI
+                        <meter value="0.50" min="0" max="1">55%</meter>
+                    </li>
+                    <li>
+                        <i class="fab fa-git-alt"></i>Git
+                        <meter value="0.65" min="0" max="1">60%</meter>
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i>GitHub
+                        <meter value="0.70" min="0" max="1">70%</meter>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <!-- Contact Container -->
+            <div class="contact">
+                <!-- Contact Information Container -->
+                <div class="contact-information">
+                    <address>
+                        <div>
+                            <i class="fas fa-envelope"></i> Email: caarojasbo@unal.edu.co
                         </div>
-                    </div>
-                    <!-- Form Container -->
-                    <div class="form-container">
-                        <form>
-                            <label>
-                                <input type="text" placeholder="Name" required>
-                            </label>
-                            <label>
-                                <input type="email" placeholder="Email" required>
-                            </label>
-                            <label>
-                                <input type="text" placeholder="Subject" required>
-                            </label>
-                            <label>
-                                <textarea rows="4" placeholder="Message" required></textarea>
-                            </label>
-                            <button type="submit">Send Message</button>
-                        </form>
+                        <div>
+                            <i class="fas fa-phone"></i> Phone: +57 312 405 2318
+                        </div>
+                        <div>
+                            <i class="fas fa-location"></i> Location: Medellín, Colombia
+                        </div>
+                    </address>
+                    <div class="social-links">
+                        <a href="https://github.com/Carturo8" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://co.linkedin.com/" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                        <a href="https://x.com/?lang=es" target="_blank">
+                            <i class="fab fa-x-twitter"></i> X
+                        </a>
                     </div>
                 </div>
-            </section>
-        </div>
+                <!-- Form Container -->
+                <div class="form-container">
+                    <form>
+                        <label>
+                            <input type="text" placeholder="Name" required>
+                        </label>
+                        <label>
+                            <input type="email" placeholder="Email" required>
+                        </label>
+                        <label>
+                            <input type="text" placeholder="Subject" required>
+                        </label>
+                        <label>
+                            <textarea rows="4" placeholder="Message" required></textarea>
+                        </label>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Footer -->
     <footer class="footer">

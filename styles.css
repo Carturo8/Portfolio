@@ -1,9 +1,4 @@
-/*
- * Global Reset:
- * - Removes browser default margins and padding
- * - Makes all elements use border-box sizing model
- * - Ensures consistent rendering across browsers
- */
+/* GLOBAL RESET */
 * {
     margin: 0;
     padding: 0;
@@ -20,91 +15,30 @@ html {
     scroll-behavior: smooth;
 }
 
-.container {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-color: #f5f5f5;
-    color: #000;
-    padding: 0 5rem;
-}
-
-.black-container {
-    width: 100%;
-    text-align: center;
-    background-color: #000;
-    color: #f5f5f5;
-    padding: 0 5rem;
-}
-
 h1 {
-    padding-top: 1rem;
     font-size: 3rem;
-    text-align: center;
 }
 
 h2 {
-    margin-top: 1rem;
     font-size: 2.5rem;
-    text-align: center;
 }
 
 h3 {
-    margin-top: 1rem;
     font-size: 2rem;
 }
 
 h4 {
     font-size: 1.5rem;
-    color: #000;
-}
-
-.top-space {
-    margin-top: 1rem;
-}
-
-.text-justify {
-    text-align: justify;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 li {
     list-style: none;
-    text-align: justify;
-    margin-bottom: 0.5rem;
 }
 
 img {
+    height: auto;
+    border-radius: 20px;
     border: 2px solid #d4af37;
-    border-radius: 10px;
-}
-
-figcaption {
-    padding: 1rem;
-    text-align: center;
-}
-
-details {
-    padding: 1rem;
-}
-
-meter {
-    width: 100%;
-    height: 1rem;
-    margin-left: 1rem;
-}
-
-mark {
-    background-color: #000;
-    color: #f5f5f5;
-    font-weight: bold;
-    font-style: italic;
 }
 
 address {
@@ -119,20 +53,6 @@ address {
 address i {
     font-size: 1.5rem;
 }
-
-a {
-    color: #d4af37;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: start;
-    font-size: 1rem;
-}
-
-samp {
-    font-size: 1rem;
-    color: #d4af37;
-}
-
 
 /* NAVIGATION */
 .navbar {
@@ -151,10 +71,10 @@ samp {
 }
 
 .navbar a {
-    color: #000;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.85rem;
+    color: #000;
 }
 
 .navbar a:hover {
@@ -162,118 +82,117 @@ samp {
     transition: all 0.3s;
 }
 
-
 /* HERO SECTION */
 .hero-section {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 3rem 2rem 2rem 2rem;
     background-color: #f5f5f5;
 }
 
 .hero-section p {
-    margin: 0;
+    margin-top: 0.5rem;
     padding: 0;
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
     color: #d4af37;
 }
-
-.subtitle {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #d4af37;
-    font-weight: bold;
-}
-
 
 /* ABOUT ME SECTION */
 .about-me-section {
     width: 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 2rem 10rem;
+    background-color: #000;
+    color: #f5f5f5;
+}
+
+.information {
+    width: 100%;
+    height: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    margin: 0;
+    padding: 1rem 1rem 1rem 5rem;
 }
 
-.about-me-container {
-    width: 100%;
-    height: 100%;
+.information p {
     display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-.information-container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    margin: 0 0 0 10rem;
-    padding: 3rem 0 0 0;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    margin: 2rem auto 1rem auto;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 1rem;
 }
 
-.profile-photo-container {
-    width: 100%;
-    height: 100%;
+.information blockquote {
+    text-align: center;
+}
+
+.profile-photo {
+    width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-content: center;
-    padding: 2rem;
+    padding: 1rem 1rem 1rem 5rem;
 }
-
 
 /* WORK-EXPERIENCE & EDUCATION SECTION */
 .work-education-section {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: #f5f5f5;
+    color: #000;
+    padding: 2rem 4rem;
 }
 
-/* WORK-EXPERIENCE SUBSECTION */
-.work-education-container {
+.work-experience {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.work-experience-container {
-    width: 100%;
-    height: 100%;
-    margin: 0 5rem 0 10rem;
+    margin: 0 3rem 0 10rem;
     padding: 1rem;
 }
 
-.work-justify {
+.work-experience h3 {
+    margin: 1rem 0 0 0;
+    font-size: 2rem;
+}
+
+.work-experience ul {
+    margin-top: 1rem;
+}
+
+.work-experience ul li {
     text-align: justify;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0;
     line-height: 1;
     font-size: 1.1rem;
 }
 
-
-/* EDUCATION SUBSECTION */
-.education-container {
+.education {
     width: 100%;
     height: 100%;
-    margin: 0 10rem 0 5rem;
+    margin: 0 10rem 0 3rem;
     padding: 1rem;
 }
 
-.education-container li {
-    margin: 1rem 0 1rem 0;
+.education li {
+    margin: 1rem 0;
 }
-
 
 /* PROJECTS SECTION */
 .projects-section {
@@ -282,30 +201,51 @@ samp {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+    background-color: #000;
+    color: #f5f5f5;
 }
 
-.projects-container {
+.projects {
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 
-.sub-project-container {
+.sub-project {
     height: 100%;
-    padding: 0.5rem 2rem 0 2rem;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.projects-titles {
-    margin: 1rem 0;
-    font-size: 2rem;
+.sub-project h3 {
+    margin: 1rem auto;
+    text-align: center;
     color: #d4af37;
 }
 
-/* TABLE SECTION */
+.sub-project details {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.sub-project samp {
+    font-size: 1rem;
+    color: #d4af37;
+}
+
+.sub-project figcaption {
+    margin: 1rem auto;
+    text-align: center;
+}
+
 .projects-table {
-    width: 80%;
-    margin: 2rem auto;
+    margin: 1rem auto;
     border-collapse: collapse;
     font-size: 1rem;
     background-color: #000;
@@ -337,7 +277,6 @@ samp {
     text-decoration: underline;
 }
 
-
 /* SKILLS SECTION */
 .skills-section {
     width: 100%;
@@ -345,20 +284,24 @@ samp {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    color: #000;
 }
 
-.skills-container {
+.skills {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.skills-container ul {
+.skills ul {
     margin: 0.1rem 5rem;
 }
 
-.skills-container ul li {
+.skills ul li {
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -366,12 +309,17 @@ samp {
     margin: 2rem 4rem;
 }
 
-.skills-container ul li i {
+.skills ul li i {
     font-size: 3rem;
     margin-right: 1rem;
     color: #d4af37;
 }
 
+.skills meter {
+    width: 100%;
+    height: 1rem;
+    margin-left: 1rem;
+}
 
 /* CONTACT SECTION */
 .contact-section {
@@ -380,9 +328,12 @@ samp {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+    background-color: #000;
+    color: #f5f5f5;
 }
 
-.contact-container {
+.contact {
     width: 100%;
     height: 100%;
     display: flex;
@@ -390,13 +341,13 @@ samp {
     padding: 0 10rem;
 }
 
-.contact-information-container {
+.contact-information {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.contact-information-container i {
+.contact-information i {
     color: #d4af37;
 }
 
@@ -404,6 +355,12 @@ samp {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.social-links a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .contact-text {
@@ -420,13 +377,13 @@ samp {
     margin: 2rem 0 2rem 5rem;
 }
 
-form {
+.form-container form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-input, textarea {
+.form-container input, textarea {
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
@@ -434,7 +391,7 @@ input, textarea {
     border-radius: 4px;
 }
 
-button {
+.form-container button {
     padding: 0.5rem 1rem;
     background-color: #d4af37;
     color: #000;
