@@ -41,19 +41,6 @@ img {
     border: 2px solid #d4af37;
 }
 
-address {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    gap: 1.5rem;
-}
-
-address i {
-    font-size: 1.5rem;
-}
-
 /* NAVIGATION */
 .navbar {
     position: fixed;
@@ -345,6 +332,19 @@ address i {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.contact-information address {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1.5rem;
+}
+
+.contact-information address i {
+    font-size: 1.5rem;
 }
 
 .contact-information i {
