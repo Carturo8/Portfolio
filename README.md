@@ -1,3 +1,3 @@
 # Portfolio
 
-https://carturo8.github.io/portfolio/
+https://carturo8.github.io/Portfolio/
