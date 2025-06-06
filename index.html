@@ -20,8 +20,17 @@
     <header>
         <!-- Navigation -->
         <nav class="navbar">
-            <ul>
-                <!-- Navigation links to different sections of the page -->
+            <!-- Hidden checkbox to control the menu toggle -->
+            <input type="checkbox" id="menu-toggle" />
+
+            <!-- Hamburger menu label linked to the checkbox -->
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#work-experience-education">Work Experience & Education</a></li>
                 <li><a href="#my-projects">My Projects</a></li>
@@ -168,10 +177,10 @@
                         <ul>
                             <li><i class="fas fa-envelope"></i> Email: caarojasbo@unal.edu.co</li>
                             <li><i class="fas fa-phone"></i> Phone: +57 312 405 2318</li>
-                            <li><i class="fas fa-location"></i> Location: Medellín, Colombia</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Location: Medellín, Colombia</li>
                         </ul>
                     </address>
-                    <div class="social-links">
+                    <div class="contact-links">
                         <a href="https://github.com/Carturo8" target="_blank">
                             <i class="fab fa-github"></i> GitHub
                         </a>
@@ -183,7 +192,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- Form -->
+                <!-- Contact Form -->
                 <div class="form-container">
                     <form action="#" method="POST">
                         <label for="name"></label>
