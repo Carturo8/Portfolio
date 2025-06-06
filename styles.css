@@ -1,4 +1,4 @@
-/* GLOBAL RESET */
+/* Global reset */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ html {
     scroll-behavior: smooth; /* Smooth scroll for anchor links */
 }
 
-/* BODY */
+/* Body */
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -21,6 +21,7 @@ h1 {
 
 h2 {
     font-size: 2.5rem;
+    text-align: center;
 }
 
 h3 {
@@ -41,7 +42,7 @@ img {
     border: 2px solid #d4af37; /* Border color */
 }
 
-/* NAVIGATION */
+/* Navigation */
 .navbar {
     position: fixed;
     width: 100%;
@@ -69,7 +70,7 @@ img {
     transition: all 0.3s; /* Smooth transition */
 }
 
-/* HERO SECTION */
+/* Hero Section */
 .hero-section {
     width: 100%;
     display: flex;
@@ -79,7 +80,7 @@ img {
     margin: 0 auto;
     padding: 3rem 2rem 2rem 2rem;
     background-color: #f5f5f5;
-    animation: fadeInUp 2s ease-out;
+    animation: fadeInUp 1.5s ease-out;
 }
 
 .hero-section p {
@@ -91,72 +92,63 @@ img {
     color: #d4af37;
 }
 
-/* ABOUT ME SECTION */
+/* About Me Section */
 .about-me-section {
     width: 100%;
     display: flex;
     flex-direction: row; /* Row layout for photo and text */
     justify-content: center;
     align-items: center;
-    margin: 0;
     padding: 2rem 10rem;
     background-color: #000;
     color: #f5f5f5;
 }
 
 .information {
-    width: 100%;
-    height: 100%;
+    margin: 0 5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 1rem 1rem 5rem;
-}
-
-.information p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2rem auto 1rem auto;
-    text-align: justify;
-    line-height: 1.5;
-    font-size: 1rem;
-}
-
-.information blockquote {
     text-align: center;
 }
 
-.profile-photo {
-    width: 80%;
-    display: flex;
-    justify-content: start;
-    align-content: center;
-    padding: 1rem 1rem 1rem 5rem;
+.information p {
+    margin: 2rem 0;
+    text-align: justify;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
 }
 
-/* WORK-EXPERIENCE & EDUCATION SECTION */
+.information blockquote {
+    margin: 1rem auto;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.1rem;
+}
+
+.profile-photo {
+    display: flex;
+    margin: 0 5rem;
+}
+
+/* Work-Experience & Education Section */
 .work-education-section {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 2rem 4rem;
     background-color: #f5f5f5;
     color: #000;
-    padding: 2rem 4rem;
 }
 
 .work-experience {
     width: 100%;
-    height: 100%;
-    margin: 0 3rem 0 10rem;
-    padding: 1rem;
+    margin: 0 5rem 0 10rem;
 }
 
 .work-experience h3 {
-    margin: 1rem 0 0 0;
+    margin-top: 1rem;
     font-size: 2rem;
 }
 
@@ -168,21 +160,19 @@ img {
     text-align: justify;
     margin: 0.5rem 0;
     line-height: 1;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .education {
     width: 100%;
-    height: 100%;
-    margin: 0 10rem 0 3rem;
-    padding: 1rem;
+    margin: 0 10rem 0 5rem;
 }
 
 .education li {
     margin: 1rem 0;
 }
 
-/* PROJECTS SECTION */
+/* Projects Section */
 .projects-section {
     width: 100%;
     display: flex;
@@ -197,17 +187,14 @@ img {
 .projects {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 1rem;
+    margin: 1rem 0;
 }
 
 .sub-project {
-    height: 100%;
-    margin: 0 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -234,11 +221,11 @@ img {
 
 .projects-table {
     margin: 1rem auto;
+    border-radius: 2px;
     border-collapse: collapse; /* Remove space between table cells */
     font-size: 1rem;
     background-color: #000;
     color: #fff;
-    border-radius: 8px;
     overflow: hidden;
 }
 
@@ -246,7 +233,7 @@ img {
 .projects-table td {
     padding: 1rem;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
 }
 
 .projects-table th {
@@ -256,60 +243,46 @@ img {
 }
 
 .projects-table a {
-    color: #d4af37;
     text-decoration: none;
     font-weight: bold;
+    color: #d4af37;
 }
 
 .projects-table a:hover {
     text-decoration: underline; /* Hover effect for links */
 }
 
-/* SKILLS SECTION */
+/* Skills Section */
 .skills-section {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 2rem;
     background-color: #f5f5f5;
     color: #000;
 }
 
 .skills {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .skills ul {
-    margin: 0.1rem 5rem;
+    margin: 0 5rem;
 }
 
-.skills ul li {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.skills-section ul li {
     margin: 2rem 4rem;
+    text-align: start;
 }
 
-.skills ul li i {
+.skills-section ul li i {
     font-size: 3rem;
-    margin-right: 1rem;
+    margin-right: 3rem;
     color: #d4af37;
 }
 
-.skills meter {
-    width: 100%;
-    height: 1rem;
-    margin-left: 1rem;
-}
-
-/* CONTACT SECTION */
+/* Contact Section */
 .contact-section {
     width: 100%;
     display: flex;
@@ -401,21 +374,21 @@ img {
 .form-container button {
     margin: 1rem 0 0 0;
     padding: 0.5rem 1rem;
-    background-color: #d4af37;
-    color: #000;
-    font-weight: bold;
     border: none;
     border-radius: 4px;
+    font-weight: bold;
+    background-color: #d4af37;
+    color: #000;
     cursor: pointer;
 }
 
-/* FOOTER */
+/* Footer */
 .footer {
-    text-align: center;
     padding: 1rem;
-    background-color: #f8f8f8;
+    text-align: center;
     font-size: 0.9rem;
     font-weight: bold;
+    background-color: #f8f8f8;
 }
 
 @keyframes fadeInUp {
