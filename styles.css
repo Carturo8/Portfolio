@@ -71,32 +71,29 @@ img {
 }
 
 /* Hamburger Menu */
-
-/* Hide the checkbox input */
 #menu-toggle {
-    display: none;
+    display: none; /* Hide the checkbox input */
 }
 
-/* Hamburger menu styles */
 .hamburger {
-    display: none; /* Hidden by default, shown on mobile */
-    cursor: pointer;
     width: 25px;
     height: 20px;
     position: absolute;
+    display: none; /* Hidden by default, shown on mobile */
     top: 0.6rem;
     right: 1rem;
-    z-index: 1000;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
+    z-index: 1000;
 }
 
 .hamburger span {
-    display: block;
     height: 3px;
     width: 100%;
-    background-color: #000;
+    display: block;
     border-radius: 2px;
+    background-color: #000;
 }
 
 /* Hero Section */
@@ -434,7 +431,7 @@ img {
     }
 }
 
-/*  TABLETS (768px to 1023px) */
+/*  Tablets (768px to 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
 
     .about-me-section {
@@ -487,7 +484,7 @@ img {
     }
 }
 
-/* MOBILE DEVICES (up to 767px) */
+/* Mobile Devices (up to 767px) */
 @media (max-width: 767px) {
 
     .about-me {
@@ -506,7 +503,7 @@ img {
     }
 }
 
-/* TABLETS and SMALLER SCREENS (up to 768px) */
+/* Tablets and smaller screens (up to 768px) */
 @media (max-width: 768px) {
 
     .hamburger {
@@ -527,26 +524,23 @@ img {
         border-radius: 0 0 0 5px;
     }
 
-    /* Show menu when checkbox is checked */
     #menu-toggle:checked + .hamburger + .nav-links {
         display: flex;
     }
 
-    /* Stack the list items vertically */
     .nav-links li {
         margin: 1rem 0;
     }
 
-    /* Increase link size for touch */
     .nav-links a {
         font-size: 1rem;
     }
 }
 
-/* MOBILE ONLY (up to 480px) */
+/* Mobile only (up to 480px) */
 @media (max-width: 480px) {
     .nav-links {
-        width: 180px; /* slightly smaller width */
+        width: 180px;
         padding: 0.8rem;
     }
 }
